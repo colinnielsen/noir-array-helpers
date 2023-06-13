@@ -1,7 +1,5 @@
 # Noir Array Helpers
 
-[![Build Status](https://travis-ci.com/colinnielsen/noir-array-helpers.svg?branch=main)](https://travis-ci.com/colinnielsen/noir-array-helpers)
-[![Coverage Status](https://coveralls.io/repos/github/colinnielsen/noir-array-helpers/badge.svg?branch=main)](https://coveralls.io/github/colinnielsen/noir-array-helpers?branch=main)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Noir Array Helpers** is a Noir function library to manipulate arrays. This library serves a kitchen sink for various array functions the Noir community finds useful. `v0.1.0` mostly contains useful functions for Ethereum signatures, joining, and splitting arrays.
