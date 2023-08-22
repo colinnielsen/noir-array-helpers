@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-**Noir Array Helpers** is a Noir function library to manipulate arrays. This library serves a kitchen sink for various array functions the Noir community finds useful. `v0.1.0` mostly contains useful functions for Ethereum signatures, joining, and splitting arrays.
+**Noir Array Helpers** is a Noir function library to manipulate arrays. This library serves a kitchen sink for various array functions the Noir community finds useful.
 
 ## Installation
 
@@ -10,7 +10,7 @@ In your `Nargo.toml` file, add the following dependency:
 
 ```toml
 [dependencies]
-array_helpers = { tag = "v0.1.0", git = "https://github.com/colinnielsen/noir-array-helpers" }
+array_helpers = { tag = "v0.10.0", git = "https://github.com/colinnielsen/noir-array-helpers" }
 ```
 
 then `use` it in your circuits:
