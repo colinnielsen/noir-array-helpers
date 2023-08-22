@@ -1,5 +1,5 @@
 [package]
-name = "noir-array-helpers"
+name = "noir_array_helpers"
 authors = ["@colinnielsen"]
 compiler_version = "0.6.0"
 notes = "AMDG"
