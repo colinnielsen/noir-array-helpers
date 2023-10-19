@@ -24,7 +24,7 @@ fn u8_32s_to_u64_16(
     combined_u64
 }
 
-unconstrained
+ 
 fn u8_32s_to_u64_16_unconstrained(
     arr_a: [u8; 32],
     arr_b: [u8; 32],
@@ -94,7 +94,6 @@ fn u8_32_to_u8_64(
     combined
 }
 
-unconstrained
 pub fn u8_32_to_u8_64_unconstrained(
     arr_a: [u8; 32],
     arr_b: [u8; 32],
@@ -129,7 +128,6 @@ fn u64_4_to_u8_32(
     output
 }
 
-unconstrained
 fn u64_4_to_u8_32_unconstrained(
     array: [u64; 4]
 ) -> [u8; 32] {
@@ -207,7 +205,6 @@ fn u8_to_u160(
     addr
 }
 
-unconstrained
 fn u8_to_u160_unconstrained(
     array: [u8]
 ) -> Field {
@@ -227,7 +224,7 @@ fn u8_to_eth_address(
     u8_to_u160(array)
 }
 
-unconstrained
+ 
 fn u8_to_eth_address_unconstrained(
     array: [u8]
 ) -> Field {
@@ -267,7 +264,7 @@ fn split_u8_64(
     (arr_a, arr_b)
 }
 
-unconstrained
+ 
 pub fn split_u8_64_unconstrained(
     arr: [u8; 64]
 ) -> ([u8; 32], [u8; 32]) {
