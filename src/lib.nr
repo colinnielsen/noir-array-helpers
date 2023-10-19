@@ -95,7 +95,7 @@ fn u8_32_to_u8_64(
 }
 
 unconstrained
-fn u8_32_to_u8_64_unconstrained(
+pub fn u8_32_to_u8_64_unconstrained(
     arr_a: [u8; 32],
     arr_b: [u8; 32],
 ) -> [u8; 64] {
@@ -268,7 +268,7 @@ fn split_u8_64(
 }
 
 unconstrained
-fn split_u8_64_unconstrained(
+pub fn split_u8_64_unconstrained(
     arr: [u8; 64]
 ) -> ([u8; 32], [u8; 32]) {
     let mut arr_a: [u8; 32] = [0; 32];
