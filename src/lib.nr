@@ -9,14 +9,14 @@ fn u8_32s_to_u64_16(
     for i in 0..4 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_a[i*8+j] as u64) << ((56 - j*8) as u64);
+            value |= (arr_a[i*8+j] as u64) << ((56 - j*8) as u8);
         }
          combined_u64[i] = value;
     }
     for i in 4..8 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_b[(i-4)*8+j] as u64) << ((56 - j*8) as u64);
+            value |= (arr_b[(i-4)*8+j] as u64) << ((56 - j*8) as u8);
         }
          combined_u64[i] = value;
     }
@@ -34,14 +34,14 @@ fn u8_32s_to_u64_16_unconstrained(
     for i in 0..4 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_a[i*8+j] as u64) << ((56 - j*8) as u64);
+            value |= (arr_a[i*8+j] as u64) << ((56 - j*8) as u8);
         }
          combined_u64[i] = value;
     }
     for i in 4..8 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_b[(i-4)*8+j] as u64) << ((56 - j*8) as u64);
+            value |= (arr_b[(i-4)*8+j] as u64) << ((56 - j*8) as u8);
         }
          combined_u64[i] = value;
     }
@@ -121,7 +121,7 @@ fn u64_4_to_u8_32(
     for num_idx in 0..4 {
         for bit_pos in 0..8 {
             let shift_amount: u64 = 56 - (bit_pos * 8) as u64;
-            output[output_index] = ((array[num_idx] >> shift_amount) & 255) as u8;
+            output[output_index] = ((array[num_idx] >> shift_amount as u8) & 255) as u8;
             output_index += 1;
         }
     }
@@ -139,7 +139,7 @@ fn u64_4_to_u8_32_unconstrained(
     for num_idx in 0..4 {
         for bit_pos in 0..8 {
             let shift_amount: u64 = 56 - (bit_pos * 8) as u64;
-            output[output_index] = ((array[num_idx] >> shift_amount) & 255) as u8;
+            output[output_index] = ((array[num_idx] >> shift_amount as u8) & 255) as u8;
             output_index += 1;
         }
     }
