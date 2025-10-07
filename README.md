@@ -17,7 +17,7 @@ In your `Nargo.toml` file, add the following dependency:
 
 ```toml
 [dependencies]
-array_helpers = { tag = "v0.30.1", git = "https://github.com/colinnielsen/noir-array-helpers" }
+array_helpers = { tag = "v0.30.2", git = "https://github.com/colinnielsen/noir-array-helpers" }
 ```
 
 then `use` it in your circuits:
