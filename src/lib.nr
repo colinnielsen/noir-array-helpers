@@ -4,14 +4,14 @@ pub fn u8_32s_to_u64_16(arr_a: [u8; 32], arr_b: [u8; 32]) -> [u64; 16] {
     for i in 0..4 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_a[i * 8 + j] as u64) << ((56 - j * 8) as u64);
+            value |= (arr_a[i * 8 + j] as u64) << ((56 - j * 8) as u8);
         }
         combined_u64[i] = value;
     }
     for i in 4..8 {
         let mut value: u64 = 0;
         for j in 0..8 {
-            value |= (arr_b[(i - 4) * 8 + j] as u64) << ((56 - j * 8) as u64);
+            value |= (arr_b[(i - 4) * 8 + j] as u64) << ((56 - j * 8) as u8);
         }
         combined_u64[i] = value;
     }
