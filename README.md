@@ -1,5 +1,6 @@
 # Noir Array Helpers
 
+[![Build](https://github.com/colinnielsen/noir-array-helpers/actions/workflows/noir.yml/badge.svg)](https://github.com/colinnielsen/noir-array-helpers/actions/workflows/noir.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Noir Array Helpers** is a Noir function library to manipulate arrays. This library serves a kitchen sink for various array functions the Noir community finds useful.
